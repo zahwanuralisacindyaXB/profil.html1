@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initialscale=1.0">
+ <title>Profil Siswa</title>
+ <!-- Font Awesome -->
+ <link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/6.5.1/css/all.min.css">
+ <!-- Google Font -->
+ <link 
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;4
+00;600;700&display=swap" rel="stylesheet">
+ <style>
+ *{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ font-family:'Poppins', sans-serif;
+ }
+ body{
+ min-height:100vh;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+align-items:center;
+ overflow:hidden;
+ background:linear-gradient(-45deg,
+ #ff1493,
+ #ff69b4,
+ #ff8fd8,
+ #ff4fc3);
+ background-size:400% 400%;
+ animation:bg 10s ease infinite;
+ padding:20px;
+ }
+ /* Animasi Background */
+ @keyframes bg{
+ 0%{background-position:0% 50%;}
+ 50%{background-position:100% 50%;}
+ 100%{background-position:0% 50%;}
+ }
+ /* Header */
+ header{
+ margin-bottom:25px;
+ text-align:center;
+ animation:fadeDown 1s ease;
+ }
+ header h1{
+ font-size:38px;
+ color:white;
+ letter-spacing:2px;
+ text-transform:uppercase;
+ text-shadow:
+ 0 0 10px #fff,
+ 0 0 20px #ff69b4,
+ 0 0 40px #ff1493;
+ }
+ header p{
+ color:#fff;
+margin-top:8px;
+ font-size:15px;
+ letter-spacing:1px;
+ }
+ @keyframes fadeDown{
+ from{
+ opacity:0;
+ transform:translateY(-40px);
+ }
+ to{
+ opacity:1;
+ transform:translateY(0);
+ }
+ }
+ /* Efek Blink */
+ @keyframes blink{
+ 0%,100%{
+ box-shadow:
+ 0 0 10px #fff,
+ 0 0 20px #ff69b4,
+ 0 0 40px #ff1493;
+ }
+ 50%{
+ box-shadow:
+ 0 0 5px #fff,
+ 0 0 10px #ff69b4,
+ 0 0 20px #ff1493;
+ }
+ }
+ /* Card */
+ .card{
+ width:380px;
+ padding:30px;
+ border-radius:25px;
+ text-align:center;
+color:white;
+ background:rgba(255,255,255,0.12);
+ backdrop-filter:blur(12px);
+ border:2px solid rgba(255,255,255,0.2);
+ animation:blink 1.5s infinite;
+ }
+ /* Foto */
+ .profile-img{
+ width:130px;
+ height:130px;
+ border-radius:50%;
+ border:4px solid white;
+ object-fit:cover;
+ margin-bottom:15px;
+ }
+ /* Nama */
+ .card h2{
+ font-size:30px;
+ margin-bottom:10px;
+ color:white;
+ }
+ /* Deskripsi */
+ .desc{
+ font-size:15px;
+ line-height:1.8;
+ margin-top:10px;
+ color:#fff;
+ }
+ /* Quote */
+ .quote{
+ margin-top:20px;
+ font-style:italic;
+ font-size:14px;
+ color:#ffe6f5;
+ }
+ /* Sosial Media */
+ .social{
+ margin-top:25px;
+ }
+ .social a{
+ text-decoration:none;
+ color:white;
+ font-size:28px;
+ margin:0 12px;
+ transition:0.3s;
+ }
+ .social a:hover{
+ color:#ffe4f2;
+ transform:scale(1.2);
+ }
+ </style>
+</head>
+<body>
+ <!-- HEADER -->
+ <header>
+ <h1>Profile Diri Siswa</h1>
+ <p>✨ Kreatif • Modern • Informatika ✨</p>
+ </header>
+ <!-- CARD -->
+ <div class="card">
+ <!-- Foto -->
+ <img src="foto.png"
+ alt="Foto Profil"
+ class="profile-img">
+ <!-- Nama -->
+ <h2>zahwa nafilia
+</h2>
+ <!-- Deskripsi -->
+ <div class="desc">
+ <p><b>Kelas:</b> X Informatika</p>
+ <p><b>Sekolah:</b> SMKS Kesehatan Yannas Husada 
+Bangkalan</p>
+ <p><b>Hobi:</b>menggambar e</p>
+ </div>
+ <!-- Quote -->
+ <div class="quote."
+"melangkah dan terus mencari untuk masa depan"
+ </div>
+ <!-- Sosial Media -->
+ <div class="social">
+ <a href="#" title="Instagram">
+ <i class="fab fa-instagram"></i>
+ </a>
+ <a href="#" title="TikTok">
+ <i class="fab fa-tiktok"></i>
+ </a>
+ <a href="#" title="WhatsApp">
+ <i class="fab fa-whatsapp"></i>
+ </a>
+ <a href="#" title="Github">
+ <i class="fab fa-github"></i>
+ </a>
+ </div>
+ </div>
+</body>
+</html>
